@@ -1,0 +1,38 @@
+<html>
+  <head>
+  </head>
+    <body bgcolor="lightblue"; style="text-align:center"; style = "font-family:helvetica";>
+      <br>
+      <font size="30dp">Hello there!</font>
+      <hr style="height:30pt; visibility:hidden;" />
+      <form action="http://localhost:4567/birthday_greeting" method="post">
+      <h2>What's your name?</h2>
+        <input type="name" name="name" id="name">
+      <h2>When's your birthday?</h2>
+      <div class="block">
+
+        <label>day:</label>
+        <input type="text" name="day" id="day" style="width:30px" placeholder="1" >
+
+          <label>month:</label>
+      <select name=value>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        </div>
+        <br>
+         <button type="submit" style="width:300px" >Go!</button>
+      </form>
+
+    </body>
+</html>

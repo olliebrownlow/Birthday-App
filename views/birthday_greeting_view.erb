@@ -1,0 +1,30 @@
+<html>
+  <head>
+  </head>
+
+  <% if @days == 0 %>
+
+  <hr style="height:250px; visibility:hidden;" />
+  <body bgcolor="lightblue"; style="text-align:center"; style = "font-family:helvetica";>
+    <font size="30dp">Happy Birthday <%= @name %>!</font>
+  </body>
+
+  <% elsif @days.negative?; @days += 365 %>
+
+  <hr style="height:250px; visibility:hidden;" />
+  <body bgcolor="lightblue"; style="text-align:center"; style = "font-family:helvetica";>
+    <font size="30dp">Your birthday will be in <%= @days %> days, <%= @name %>.</font>
+  </body>
+
+  <% else @days %>
+
+  <hr style="height:250px; visibility:hidden;" />
+  <body bgcolor="lightblue"; style="text-align:center"; style = "font-family:helvetica";>
+    <font size="30dp">Your birthday will be in <%= @days %> days, <%= @name %>.</font>
+  </body>
+
+   <% end %>
+
+
+
+  </html>
